@@ -1,6 +1,6 @@
 # capacitor-esc-pos-printer
 
-Esc Pos
+CapacitorJS wrapper for ESC POS (native) printers.
 
 ## Install
 
