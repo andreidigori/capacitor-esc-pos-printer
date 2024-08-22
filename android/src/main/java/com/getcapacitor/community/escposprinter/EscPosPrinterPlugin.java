@@ -290,12 +290,8 @@ public class EscPosPrinterPlugin extends Plugin {
         if (bluetoothAdapter == null) {
             var bluetoothAvailable = getContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH);
             if (bluetoothAvailable) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    var bluetoothManager = getContext().getSystemService(BluetoothManager.class);
-                    bluetoothAdapter = bluetoothManager.getAdapter();
-                } else {
-                    bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-                }
+                var bluetoothManager = getContext().getSystemService(BluetoothManager.class);
+                bluetoothAdapter = bluetoothManager.getAdapter();
             }
             if (bluetoothAdapter == null) {
                 call.reject("Bluetooth is not available.");
