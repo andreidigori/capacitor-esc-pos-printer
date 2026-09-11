@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "EscPosPrinter",
-    platforms: [.iOS(.v14)],
+    name: "CapacitorEscPosPrinter",
+    platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "EscPosPrinter",
+            name: "CapacitorEscPosPrinter",
             targets: ["EscPosPrinterPlugin"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "7.0.0")
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0")
     ],
     targets: [
         .target(

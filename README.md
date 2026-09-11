@@ -4,8 +4,21 @@ CapacitorJS wrapper for ESC POS (native) printers.
 
 ## Install
 
+To use npm
+
 ```bash
 npm install capacitor-esc-pos-printer
+````
+
+To use yarn
+
+```bash
+yarn add capacitor-esc-pos-printer
+```
+
+Sync native files
+
+```bash
 npx cap sync
 ```
 
